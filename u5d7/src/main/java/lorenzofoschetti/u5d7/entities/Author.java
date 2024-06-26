@@ -25,12 +25,11 @@ public class Author {
 
     private String avatar;
 
-    public Author(int id, String name, String surname, String email, LocalDate dataDiNascita) {
-        this.id = id;
+    public Author(String name, String surname, String email, LocalDate dataDiNascita, String avatar) {
         this.name = name;
         this.surname = surname;
         this.email = email;
         this.dataDiNascita = dataDiNascita;
-        this.setAvatar("https://ui-avatars.com/api/?name=" + this.getName() + this.getSurname());
+        this.avatar = avatar;
     }
 }
